@@ -1,1 +1,0 @@
-# Alkalmazasok-Fejlesztese-Projekt-Labor-II.
