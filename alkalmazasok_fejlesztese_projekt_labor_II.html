@@ -133,6 +133,7 @@
 </head>
 
 <body>
+<body>
   <h1>Tartalomjegyzék</h1>
 
   <h3><u>Alapdokumentumok</u></h3>
@@ -141,37 +142,76 @@
     <ul>
       <li>
         <div class="header-container">
-          <a href="#"><b>MUNKANAPLÓ</b></a>
-          <button class="toggle-button" onclick="toggleContent('extraContent0', this)"
-            aria-label="Alfejezetek megnyitása/bezárása">&#9660;</button>
+          <a href="https://github.com/oroszkristof/Alkalmazasok-Fejlesztese-Projekt-Labor-II.-EYZWG9-FUEBB7">
+            <b>GITHUB REPOSITORY</b>
+          </a>
+          <button class="toggle-button"
+            onclick="toggleContent('extraContentGithub', this)"
+            aria-label="Alfejezetek megnyitása/bezárása">
+            &#9660;
+          </button>
         </div>
-        <div id="extraContent0" class="extra-content">
-          <p style="text-align: justify;">A dokumentum tartalmazza a webalkalmazásunk során végzett napi tevékenységeket, és a fejlesztési folyamat
-            fontosabb mérföldköveit.</p>
+
+        <div id="extraContentGithub" class="extra-content">
+          <p style="text-align: justify;">
+            Megtekinthető a tantárgy összes dokumentuma és forrásfálja.
+          </p>
+        </div>
+      </li>
     </ul>
   </div>
-  </li>
-  </ul>
-  </div>
 
-
-
-  <h3><u>Alkalmazásfejlesztés dokumentációi</u></h3>
   <div class="link">
     <ul>
       <li>
         <div class="header-container">
-          <a href="https://drive.google.com/file/d/1iwl31cP3p_BuPxdTMY4zaybnLY1eWIga/view?usp=sharing"><b>I. PROJEKT TERV</b></a>
-          <button class="toggle-button" onclick="toggleContent('extraContent1', this)"
-            aria-label="Alfejezetek megnyitása/bezárása">&#9660;</button>
+          <a href="#"><b>MUNKANAPLÓ</b></a>
+          <button class="toggle-button"
+            onclick="toggleContent('extraContentMunkanaplo', this)"
+            aria-label="Alfejezetek megnyitása/bezárása">
+            &#9660;
+          </button>
         </div>
-        <div id="extraContent1" class="extra-content">
-                    <p style="text-align: justify;">A dokumentum tartalmazza a webalkalmazásunk projekttervét.</p>
+
+        <div id="extraContentMunkanaplo" class="extra-content">
+          <p style="text-align: justify;">
+            A dokumentum tartalmazza a webalkalmazásunk során végzett napi tevékenységeket,
+            és a fejlesztési folyamat fontosabb mérföldköveit.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <h3><u>Alkalmazásfejlesztés dokumentációi</u></h3>
+
+  <div class="link">
+    <ul>
+      <li>
+        <div class="header-container">
+          <a href="https://drive.google.com/file/d/1QlHgiv7goc-kz_AL47LCez6y_jZaYyGK/view?usp=sharing">
+            <b>I. PROJEKT TERV</b>
+          </a>
+          <button class="toggle-button"
+            onclick="toggleContent('extraContentProjekt', this)"
+            aria-label="Alfejezetek megnyitása/bezárása">
+            &#9660;
+          </button>
+        </div>
+
+        <div id="extraContentProjekt" class="extra-content">
+          <p style="text-align: justify;">
+            A dokumentum tartalmazza a webalkalmazásunk projekttervét.
+          </p>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <script>
     function toggleContent(id, button) {
       var extra = document.getElementById(id);
+
       if (extra.style.display === "none" || extra.style.display === "") {
         extra.style.display = "block";
         button.innerHTML = "&#9650;";
@@ -181,6 +221,7 @@
       }
     }
   </script>
+
 </body>
 
 </html>
